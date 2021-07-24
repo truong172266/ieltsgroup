@@ -1,0 +1,39 @@
+{
+  "files": {
+    "app.js": "/ieltsgroup/static/js/app.cac929f3.chunk.js",
+    "app.js.map": "/ieltsgroup/static/js/app.cac929f3.chunk.js.map",
+    "runtime~app.js": "/ieltsgroup/static/js/runtime~app.11832966.js",
+    "runtime~app.js.map": "/ieltsgroup/static/js/runtime~app.11832966.js.map",
+    "static/js/2.4ce70170.chunk.js": "/ieltsgroup/static/js/2.4ce70170.chunk.js",
+    "static/js/2.4ce70170.chunk.js.map": "/ieltsgroup/static/js/2.4ce70170.chunk.js.map",
+    "fonts/AntDesign.ttf": "/ieltsgroup/./fonts/AntDesign.ttf",
+    "fonts/Entypo.ttf": "/ieltsgroup/./fonts/Entypo.ttf",
+    "fonts/Feather.ttf": "/ieltsgroup/./fonts/Feather.ttf",
+    "fonts/FontAwesome.ttf": "/ieltsgroup/./fonts/FontAwesome.ttf",
+    "fonts/FontAwesome5_Brands.ttf": "/ieltsgroup/./fonts/FontAwesome5_Brands.ttf",
+    "fonts/FontAwesome5_Solid.ttf": "/ieltsgroup/./fonts/FontAwesome5_Solid.ttf",
+    "fonts/Fontisto.ttf": "/ieltsgroup/./fonts/Fontisto.ttf",
+    "fonts/Foundation.ttf": "/ieltsgroup/./fonts/Foundation.ttf",
+    "fonts/Ionicons.ttf": "/ieltsgroup/./fonts/Ionicons.ttf",
+    "fonts/MaterialCommunityIcons.ttf": "/ieltsgroup/./fonts/MaterialCommunityIcons.ttf",
+    "fonts/MaterialIcons.ttf": "/ieltsgroup/./fonts/MaterialIcons.ttf",
+    "fonts/SimpleLineIcons.ttf": "/ieltsgroup/./fonts/SimpleLineIcons.ttf",
+    "fonts/SpaceMono-Regular.ttf": "/ieltsgroup/./fonts/SpaceMono-Regular.ttf",
+    "favicon-16.png": "/ieltsgroup/favicon-16.png",
+    "favicon-32.png": "/ieltsgroup/favicon-32.png",
+    "favicon.ico": "/ieltsgroup/favicon.ico",
+    "index.html": "/ieltsgroup/index.html",
+    "manifest.json": "/ieltsgroup/manifest.json",
+    "serve.json": "/ieltsgroup/serve.json",
+    "static/js/2.4ce70170.chunk.js.LICENSE.txt": "/ieltsgroup/static/js/2.4ce70170.chunk.js.LICENSE.txt",
+    "static/media/bell.png": "/ieltsgroup/static/media/bell.cf04af27.png",
+    "static/media/heart.png": "/ieltsgroup/static/media/heart.23b5c2c0.png",
+    "static/media/rocket.png": "/ieltsgroup/static/media/rocket.d2f3bf41.png",
+    "static/media/star.png": "/ieltsgroup/static/media/star.69c71386.png"
+  },
+  "entrypoints": [
+    "static/js/runtime~app.11832966.js",
+    "static/js/2.4ce70170.chunk.js",
+    "static/js/app.cac929f3.chunk.js"
+  ]
+}
