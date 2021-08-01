@@ -1,15 +1,41 @@
 import React, {useState} from 'react';
 import { KeyboardAvoidingView, StyleSheet, Text, View, TextInput, TouchableOpacity, Keyboard, ScrollView, Platform } from 'react-native';
 import Task from "../components/Task";
+import {AntDesign} from "@expo/vector-icons";
+import Firebase from "../firebase/Firebase";
 
 export default function TabTwoScreen() {
-    const [task, setTask] = useState();
+    const [task, setTask] = useState('');
     const [taskItems, setTaskItems] = useState([]);
 
-    const handleAddTask = () => {
-        Keyboard.dismiss();
-        setTaskItems([...taskItems, task])
-        setTask(null);
+    const handleAddTask = async () => {
+       if(task != ''){
+           Keyboard.dismiss();
+         //  setTaskItems([...taskItems, task]);
+           await Firebase.push(
+               'Tasks',
+               {
+                    detail: task,
+               }
+           );
+           await Firebase.listen(
+               'Tasks',
+               'value',
+               async (snapshot)=>{
+                   if(snapshot.val() != null )
+                   {
+                       var arr = Object.values(snapshot.val());
+                       console.log(arr);
+                       setTaskItems([arr]);
+                   }
+               }
+           );
+           setTask('');
+
+       }
+       else  {
+           alert('Để trống Task rồi kìa c ... ');
+       }
     }
 
     const completeTask = (index) => {
@@ -30,7 +56,7 @@ export default function TabTwoScreen() {
 
                 {/* Today's Tasks */}
                 <View style={styles.tasksWrapper}>
-                    <Text style={styles.sectionTitle}>Today's tasks</Text>
+                    <Text style={styles.sectionTitle}>Today's Tasks</Text>
                     <View style={styles.items}>
                         {/* This is where the tasks will go! */}
                         {
@@ -96,7 +122,7 @@ const styles = StyleSheet.create({
         borderRadius: 60,
         borderColor: '#C0C0C0',
         borderWidth: 1,
-        width: 250,
+        width: '70%',
     },
     addWrapper: {
         width: 60,
